@@ -23,6 +23,11 @@ import PasteFromOfficePlugin from '@ckeditor/ckeditor5-paste-from-office/src/pas
 import TablePlugin from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbarPlugin from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformationPlugin from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import StrikethroughPlugin from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import UnderlinePlugin from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import FontColorPlugin from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontBackgroundColorPlugin from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
+import AlignmentPlugin from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
@@ -51,6 +56,11 @@ ClassicEditor.builtinPlugins = [
 	TablePlugin,
 	TableToolbarPlugin,
 	TextTransformationPlugin,
+	StrikethroughPlugin,
+	UnderlinePlugin,
+	FontColorPlugin,
+	FontBackgroundColorPlugin,
+	AlignmentPlugin,
 ];
 
 ClassicEditor.defaultConfig = {
