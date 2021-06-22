@@ -15,10 +15,12 @@ import ImageUploadPlugin from '@ckeditor/ckeditor5-image/src/imageupload';
 import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
+import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
 
 export default class ClassicEditor extends ClassicEditorBase { }
 
 ClassicEditor.builtinPlugins = [
+	CloudServices,
 	EssentialsPlugin,
 	UploadAdapterPlugin,
 	AutoformatPlugin,
