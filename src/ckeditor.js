@@ -20,7 +20,6 @@ import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices'
 export default class ClassicEditor extends ClassicEditorBase { }
 
 ClassicEditor.builtinPlugins = [
-	CloudServices,
 	EssentialsPlugin,
 	UploadAdapterPlugin,
 	AutoformatPlugin,
@@ -36,7 +35,8 @@ ClassicEditor.builtinPlugins = [
 	ImageUploadPlugin,
 	LinkPlugin,
 	ListPlugin,
-	ParagraphPlugin
+	ParagraphPlugin,
+	CloudServices,
 ];
 
 ClassicEditor.defaultConfig = {
